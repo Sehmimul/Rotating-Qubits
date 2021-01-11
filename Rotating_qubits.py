@@ -20,10 +20,10 @@ def circuit(params):
 # We can say that the we have the optimized parameters for
 # Our required transformation
 
-def cost(x):
-    return circuit(x)+1
+def cost(z):
+    return circuit(z)+1
 
-initparams = np.array([0.12, 0.03])
+initparams = np.array([0.12, 0.13])
 
 # initialising the optimizer
 opt = qml.GradientDescentOptimizer(stepsize=0.3)
